@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { FiMenu, FiSun, FiMoon } from "react-icons/fi";
-import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import useDarkMode from "../hooks/useDarkMode";
@@ -50,29 +49,9 @@ export default function Navbar() {
         <div className="mx-auto flex items-center justify-between px-6 py-4 font-poppins">
           {/* Logo + LinkedIn */}
           <motion.div className="flex items-center gap-2" initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", stiffness: 250, damping: 20 }}>
-            <motion.a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ y: -1, scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-              className="rounded-lg p-1.5 transition
-                text-blue-700 hover:bg-blue-100/60
-                dark:text-blue-400 dark:hover:bg-blue-500/10"
-              aria-label="Open LinkedIn"
-              title="LinkedIn"
-            >
-              <FaLinkedin size={18} />
-            </motion.a>
-            <Link
-              to="hero"
-              {...linkProps}
-              className="cursor-pointer text-lg font-bold tracking-wide
-                bg-clip-text text-transparent
-                bg-gradient-to-r from-blue-600 to-blue-400
-                dark:from-blue-400 dark:to-sky-400"
-            >
-              LinkedIn Mastery
+            {/* Logo jadi image */}
+            <Link to="hero" spy={true} smooth={true} offset={-70} duration={600} className="flex items-center cursor-pointer gap-2">
+              <img src="/assets/nav-logo.png" alt="LinkedIn Mastery Logo" className="h-8 w-auto object-contain cursor-pointer" />
             </Link>
           </motion.div>
 
