@@ -1,12 +1,37 @@
-# React + Vite
+# 🚀 LinkedIn Class Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page interaktif untuk kelas strategi LinkedIn, dibangun menggunakan **React + Tailwind CSS + Framer Motion**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tools & Teknologi yang Dipakai
 
-## Expanding the ESLint configuration
+1. **React.js** – Frontend Library  
+2. **Vite** – Build Tool & Dev Server  
+3. **Tailwind CSS** – Styling Utility-First  
+4. **Framer Motion** – Animasi interaktif  
+5. **Lucide React** – Icon set modern  
+6. **React Icons** – Ikon tambahan  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Cara Menjalankan Project
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/MhmdHabi/mastery-linkedin
+   cd mastery-linkedin
+2. **Instal Dependencies**
+   ```bash
+   npm install
+   # atau
+   yarn install
+3. **Jalankan Project**
+   ```bash
+   npm eun dev
+
+---
+
+## 🌍 Live Demo
+
+👉 [Klik di sini untuk melihat demo](https://mastery-linkedin.vercel.app/)
