@@ -2,6 +2,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Benefits from "./pages/Benefits";
+import CTA from "./pages/CTA";
 import Hero from "./pages/Hero";
 import Testimonial from "./pages/Testimonial";
 
@@ -14,6 +15,7 @@ function App() {
         <About />
         <Benefits />
         <Testimonial />
+        <CTA />
         <Footer />
       </main>
     </>
