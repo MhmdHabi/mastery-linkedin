@@ -1,8 +1,14 @@
+import andi from "/assets/benefit1.webp";
+import siti from "/assets/benefit2.webp";
+import budi from "/assets/benefit3.jpeg";
+import ayu from "/assets/benefit4.jpeg";
+import rizky from "/assets/about4.jpeg";
+
 const testimonials = [
   {
     name: "Andi Saputra",
     role: "Software Engineer",
-    photo: "https://randomuser.me/api/portraits/men/32.jpg",
+    photo: andi,
     feedback: "Kelas ini benar-benar membantu saya memahami cara membangun personal branding di LinkedIn. Dampaknya terasa saat melamar kerja di perusahaan besar dan membuat profil saya lebih menonjol dibanding kandidat lain.",
     batch: "Batch 2021",
     createdAt: "2022-05-10",
@@ -10,7 +16,7 @@ const testimonials = [
   {
     name: "Siti Nurhaliza",
     role: "Product Manager",
-    photo: "https://randomuser.me/api/portraits/women/45.jpg",
+    photo: siti,
     feedback: "Saya mendapat banyak koneksi industri baru yang sangat membantu karier saya. Materinya praktis dan aplikatif, saya bisa langsung mengimplementasikan strategi networking yang diajarkan.",
     batch: "Batch 2020",
     createdAt: "2021-09-12",
@@ -18,7 +24,7 @@ const testimonials = [
   {
     name: "Budi Santoso",
     role: "Data Analyst",
-    photo: "https://randomuser.me/api/portraits/men/66.jpg",
+    photo: budi,
     feedback: "Strategi yang diajarkan membuat CV dan profil saya lebih menarik perhatian recruiter. Saya jadi lebih percaya diri saat interview dan berhasil mendapatkan pekerjaan impian.",
     batch: "Batch 2022",
     createdAt: "2023-01-20",
@@ -26,7 +32,7 @@ const testimonials = [
   {
     name: "Ayu Lestari",
     role: "UI/UX Designer",
-    photo: "https://randomuser.me/api/portraits/women/21.jpg",
+    photo: ayu,
     feedback: "Setelah mengikuti kelas ini, saya bisa membangun portofolio online yang lebih profesional. Dampaknya terasa ketika recruiter mulai menghubungi saya lewat LinkedIn.",
     batch: "Batch 2021",
     createdAt: "2022-03-05",
@@ -34,7 +40,7 @@ const testimonials = [
   {
     name: "Rizky Pratama",
     role: "Marketing Specialist",
-    photo: "https://randomuser.me/api/portraits/men/12.jpg",
+    photo: rizky,
     feedback: "Tips networking yang diajarkan membantu saya mendapatkan klien besar. Saya jadi lebih percaya diri membangun hubungan profesional dengan berbagai pihak.",
     batch: "Batch 2019",
     createdAt: "2020-11-30",

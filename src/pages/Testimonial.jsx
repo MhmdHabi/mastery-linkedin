@@ -29,12 +29,12 @@ export default function Testimonial() {
   const handleMouseLeave = () => (speed.current = 0.6);
 
   return (
-    <section id="testimonial" className="py-10 mt-10 px-6 bg-gray-50 dark:bg-black transition-colors duration-500">
+    <section id="testimonial" className="py-10 mt-10 px-6 bg-gray-50 dark:bg-black transition-colors duration-500" aria-label="Testimoni Alumni">
       {/* Header */}
       <motion.div variants={fadeDown} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} className="container mx-auto max-w-6xl text-center mb-12">
-        <span className="inline-flex items-center px-4 py-1.5 text-sm rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 mb-4">
+        <p className="inline-flex items-center px-4 py-1.5 text-sm rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 mb-4">
           <Quote className="w-4 h-4 mr-2" /> Testimoni Alumni
-        </span>
+        </p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
           Apa Kata <span className="font-extrabold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">Alumni</span>
         </h2>
@@ -43,11 +43,13 @@ export default function Testimonial() {
 
       {/* Slider otomatis */}
       <div className="overflow-hidden relative max-w-6xl mx-auto" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <motion.div ref={containerRef} className="flex space-x-6" style={{ x }}>
+        <motion.ul ref={containerRef} className="flex space-x-6" style={{ x }} role="list">
           {loopTestimonials.map((t, i) => (
-            <TestimonialCard key={i} testimonial={t} />
+            <li key={i} className="list-none">
+              <TestimonialCard testimonial={t} />
+            </li>
           ))}
-        </motion.div>
+        </motion.ul>
       </div>
     </section>
   );

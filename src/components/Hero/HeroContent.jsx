@@ -5,7 +5,14 @@ import { fadeUp } from "../../utils/animation";
 
 export default function HeroContent({ headerY }) {
   return (
-    <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.25 }} className="text-center md:text-left w-full mx-auto" style={{ y: headerY, willChange: "transform" }}>
+    <motion.section
+      aria-label="Kelas Online LinkedIn untuk Pemula hingga Menengah"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.25 }}
+      className="text-center md:text-left w-full mx-auto"
+      style={{ y: headerY, willChange: "transform" }}
+    >
       {/* Badge */}
       <motion.div
         custom={0}
@@ -40,7 +47,8 @@ export default function HeroContent({ headerY }) {
       {/* CTA */}
       <motion.div custom={3} variants={fadeUp} className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-3">
         <Link
-          to="r"
+          to="/daftar"
+          aria-label="Daftar sekarang untuk kelas LinkedIn"
           className="group inline-flex items-center justify-center rounded-2xl
                      border border-blue-200 bg-blue-600 px-6 py-3
                      text-sm font-semibold text-white shadow-lg shadow-blue-200/60
@@ -53,7 +61,8 @@ export default function HeroContent({ headerY }) {
           <FiArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
         </Link>
         <Link
-          to=""
+          to="/silabus"
+          aria-label="Lihat silabus kelas LinkedIn"
           className="inline-flex items-center justify-center rounded-2xl
                      border border-slate-200 bg-white px-6 py-3
                      text-sm font-medium text-slate-700 shadow-sm
@@ -75,11 +84,11 @@ export default function HeroContent({ headerY }) {
       >
         {["Optimasi Profil", "Personal Branding", "Networking & Job Hunting"].map((t) => (
           <motion.span key={t} whileHover={{ scale: 1.07, rotate: -1 }} transition={{ type: "spring", stiffness: 300, damping: 15 }} className="inline-flex items-center gap-2 cursor-default">
-            <FiCheckCircle className="h-4 w-4 text-blue-600 dark:text-cyan-400" />
+            <FiCheckCircle aria-hidden="true" className="h-4 w-4 text-blue-600 dark:text-cyan-400" />
             <span>{t}</span>
           </motion.span>
         ))}
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 }

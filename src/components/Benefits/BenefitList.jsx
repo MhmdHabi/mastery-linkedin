@@ -30,9 +30,17 @@ export default function BenefitList() {
   return (
     <ul className="mt-8 space-y-6">
       {benefits.map((b, i) => (
-        <motion.div key={i} variants={fadeUp} custom={i} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}>
+        <motion.li
+          key={i}
+          variants={fadeUp}
+          custom={i}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          className="list-none" // supaya tidak muncul bullet
+        >
           <BenefitItem {...b} />
-        </motion.div>
+        </motion.li>
       ))}
     </ul>
   );

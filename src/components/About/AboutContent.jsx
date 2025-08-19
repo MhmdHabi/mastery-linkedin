@@ -10,8 +10,10 @@ export default function AboutContent() {
   ];
 
   return (
-    <div>
+    <section>
+      {/* Label heading kecil */}
       <motion.span
+        as="span"
         variants={fadeUp}
         className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/70
                    px-3 py-1 text-xs text-blue-700 shadow-sm backdrop-blur
@@ -21,10 +23,12 @@ export default function AboutContent() {
         Tentang Kami
       </motion.span>
 
+      {/* Judul utama */}
       <motion.h2 variants={fadeUp} className="mt-4 text-3xl font-bold tracking-tight text-blue-800 sm:text-4xl dark:text-blue-400">
         Bangun Personal Branding & Jaringanmu di LinkedIn
       </motion.h2>
 
+      {/* Paragraf deskripsi */}
       <motion.p variants={fadeUp} className="mt-5 text-base leading-relaxed text-justify text-slate-600 sm:text-lg dark:text-slate-300">
         Kelas ini dirancang untuk para profesional, mahasiswa, dan pencari kerja yang ingin menguasai strategi praktis untuk memaksimalkan LinkedIn sebagai platform pengembangan karier. Peserta akan belajar cara mengoptimalkan profil,
         membangun personal branding yang kuat, dan menjalin koneksi bermakna melalui pendekatan interaktif. Kursus ini disusun untuk memberikan wawasan yang bisa langsung diterapkan, membuka peluang baru, memperluas jaringan profesional,
@@ -45,6 +49,6 @@ export default function AboutContent() {
           </motion.li>
         ))}
       </motion.ul>
-    </div>
+    </section>
   );
 }
