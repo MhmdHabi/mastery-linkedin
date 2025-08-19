@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import useDarkMode from "../hooks/useDarkMode";
 import { itemVariants } from "../utils/animation";
 import Drawer from "./Drawer";
-import { navItems } from "../constants/navItems";
+import { navItems } from "../utils/navItems";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
