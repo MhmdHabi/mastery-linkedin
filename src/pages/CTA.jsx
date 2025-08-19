@@ -1,7 +1,7 @@
 import { motion, LazyMotion, domAnimation } from "framer-motion";
 import { fadeUp } from "../utils/animation";
 import FAQAccordion from "../components/Faq/FAQAccordion";
-import CTAButtons from "../components/faq/CTAButtons";
+import CTAButtons from "../components/Faq/CTAButtons";
 export default function CTA() {
   return (
     <section
