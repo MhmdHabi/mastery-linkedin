@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
-import { navItems } from "../utils/navItems";
+import navItems from "../utils/navItems";
 
 export default function Footer() {
   const linkProps = {
