@@ -6,12 +6,12 @@ Landing page interaktif untuk kelas strategi LinkedIn, dibangun menggunakan **Re
 
 ## 🛠️ Tools & Teknologi yang Dipakai
 
-1. **React.js** – Frontend Library  
-2. **Vite** – Build Tool & Dev Server  
-3. **Tailwind CSS** – Styling Utility-First  
-4. **Framer Motion** – Animasi interaktif  
-5. **Lucide React** – Icon set modern  
-6. **React Icons** – Ikon tambahan  
+1. **React.js** – Frontend Library
+2. **Vite** – Build Tool & Dev Server
+3. **Tailwind CSS** – Styling Utility-First
+4. **Framer Motion** – Animasi interaktif
+5. **Lucide React** – Icon set modern
+6. **React Icons** – Ikon tambahan
 
 ---
 
@@ -21,17 +21,20 @@ Landing page interaktif untuk kelas strategi LinkedIn, dibangun menggunakan **Re
    ```bash
    git clone https://github.com/MhmdHabi/mastery-linkedin
    cd mastery-linkedin
+   ```
 2. **Instal Dependencies**
    ```bash
    npm install
    # atau
    yarn install
+   ```
 3. **Jalankan Project**
    ```bash
    npm eun dev
+   ```
 
 ---
 
 ## 🌍 Live Demo
 
-👉 [Klik di sini untuk melihat demo](https://mastery-linkedin.vercel.app/)
+👉 [Klik di sini untuk melihat demo](https://mastery-linkedin-v1.vercel.app/)
